@@ -24,3 +24,5 @@
     objectInstance.end() // Application ended
     objectInstance.name = "Akanni"
     console.log(objectInstance) // Start and end methods
+
+    
