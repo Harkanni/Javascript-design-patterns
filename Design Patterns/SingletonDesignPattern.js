@@ -20,7 +20,7 @@
     }
     const objectInstance = new SingletonClass();
     Object.freeze(objectInstance);
-    SingletonObject.start()  // Application started
-    SingletonObject.end() // Application ended
-    SingletonObject.name = "Akanni"
-    console.log(SingletonObject) // Start and end methods
+    objectInstance.start()  // Application started
+    objectInstance.end() // Application ended
+    objectInstance.name = "Akanni"
+    console.log(objectInstance) // Start and end methods
