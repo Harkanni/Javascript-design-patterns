@@ -4,18 +4,44 @@
 // The function is an abstraction that calls the Factory class.
 // Factory designs can be implemented as such
 
-class FactoryDesignClass {
-    constructor(automobileType){
-        this.name = automobileType
+class Car {
+    constructor(){
+        this.name = "Car"
     }
+    start(){console.log("Chacabum")}
     move(){console.log("Moving started")}
     stop(){console.log("Moving stopped")}
+
+}
+
+class Truck {
+    constructor(){
+        this.name = "Car"
+    }
+    start(){console.log("RUMMMMMMMMMMMMMMMMM")}
+    move(){console.log("Moving started")}
+    stop(){console.log("Moving stopped")}
+
+}
+
+class Motorcycle {
+    constructor(){
+        this.name = "Car"
+    }
+    start(){console.log("SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS")}
+    move(){console.log("Moving started")}
+    stop(){console.log("Moving stopped")}
+
 }
 function FactoryDesignFunction(automobile){
     switch (automobile){
         case "car":
-            return new FactoryDesignClass("car")
+            return new Car()
         case "motorcycle":
-            return new FactoryDesignClass("motorcycle")
+            return new Motorcycle()
+        case "truck" :
+            return new Truck()
+        default :
+            return null
     }
 }
