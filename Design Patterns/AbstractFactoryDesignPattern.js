@@ -33,15 +33,21 @@ class Motorcycle {
     stop(){console.log("Moving stopped")}
 
 }
-function FactoryDesignFunction(automobile){
-    switch (automobile){
-        case "car":
-            return new Car()
-        case "motorcycle":
-            return new Motorcycle()
-        case "truck" :
-            return new Truck()
-        default :
-            return null
+const VehicleFactory = {
+    createVehicle: function () {
+        switch (automobile){
+            case "car":
+                return new Car()
+            case "motorcycle":
+                return new Motorcycle()
+            case "truck" :
+                return new Truck()
+            default :
+                return null
+        }
     }
 }
+
+const car = VehicleFactory.createVehicle("car")
+const truck = VehicleFactory.createVehicle("truck")
+const motorcycle = VehicleFactory.createVehicle("motorcycle")
