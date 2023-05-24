@@ -1,0 +1,2 @@
+// ==> This design is used to create objects in steps. The idea is that Objects can be created in isolation without adding methods. Necessary methods can latter be added to it
+// ==> using the builder pattern, we can create an object and apply to it only the "steps" we need, which is a more flexible approach.
