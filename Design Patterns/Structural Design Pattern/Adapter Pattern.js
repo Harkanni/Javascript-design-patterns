@@ -37,5 +37,5 @@ toBillionAdapterFunction(cityToAddToCitiesObject)
 cities.push(cityToAddToCitiesObject)
 
 function largestCity(arr){
-    return Math.max(...arr.map((city) => city.population))
+    return Math.max(...arr.map((city) => city.population));
 }
